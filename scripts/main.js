@@ -2,10 +2,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if(mySrc === "images/node-ninja-logo.png") {
+  if(mySrc === "images/node-ninja-content.png") {
     myImage.setAttribute("src", "images/node-ninja-js.png");
   } else {
-    myImage.setAttribute("src", "images/node-ninja-logo.png");
+    myImage.setAttribute("src", "images/node-ninja-content.png");
   }
 };
 
