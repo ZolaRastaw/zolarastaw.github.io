@@ -17,6 +17,33 @@
 <body>
     <h1>Ninja</h1>
     <img src="images/node-ninja-content.png" alt = "nodeninja-logo: Node js and No-ninja-logo" />
+
+
+    <h2>The XMLHttpRequest Object</h2>
+
+    <div id="demo">
+    <p>Let AJAX change this text.</p>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+    
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("demo") = this.responseText();
+            }
+
+            xhttp.open("GET", "ajax_info.txt");
+            xhttp.send();
+
+        }
+    </script>
+
+
+
+
+
+
     <p> at nodeninja we are global community of </p>
         <ul>
             <!--comment here-->
@@ -28,5 +55,7 @@
         <button>Change User</button>
         <input type="text">
         <script src="scripts/main.js"> </script>
+
+
 </body>
 </html>
